@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>connect_workInfo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>registerServlet</servlet-name>
+  	<servlet-class>com.jt.web.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>registerServlet</servlet-name>
+  	<url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>com.jt.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>veritifyCodeServlet</servlet-name>
+  	<servlet-class>com.jt.web.servlet.VeritifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>veritifyCodeServlet</servlet-name>
+  	<url-pattern>/veritifyCodeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginOutServlet</servlet-name>
+  	<servlet-class>com.jt.web.servlet.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginOutServlet</servlet-name>
+  	<url-pattern>/loginOutServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
